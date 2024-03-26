@@ -1,10 +1,10 @@
+
 from pynput.mouse import Button, Controller
 mouse = Controller()
 button=Button.left
 import keyboard
 
-
-# This are the coordinates of this agents in the 1280*960 in-game resolution
+# This are the coordinates of this agents in the 1280*960 in-game resolution    
 jett=(444,794)
 raze=(833,792)
 reyna=(909,793)
@@ -14,12 +14,17 @@ selectedAgent=jett
 
 confirmButton=(643,668)
 
+# Scale Test - Worked IG
+# confirmButton=((643*1920)/1280,(668*960)/1080)
 
+currentRes="1280x960"
+
+
+        
 def click_pynput(x, y):
     mouse.position = (x, y)
     mouse.click(Button.left)
-
-
+    
 
 while True:
     print("Waitting for alt gr")
@@ -35,5 +40,19 @@ while True:
             stop=False;
         else:
             print("No alt gr clicked")
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
 
 
