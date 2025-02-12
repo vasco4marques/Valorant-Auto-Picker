@@ -3,6 +3,11 @@ from pynput.mouse import Button, Controller
 mouse = Controller()
 button=Button.left
 import keyboard
+import cv2
+import pyautogui
+import numpy as np
+
+
 
 # This are the coordinates of this agents in the 1280*960 in-game resolution    
 jett=(444,794)
